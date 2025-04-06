@@ -1,12 +1,44 @@
-# React + Vite
+This project is a **simple weather app** where users can:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Search for a city
+- View the current weather conditions (temperature, description like "Cloudy" or "Sunny", and an icon)
+- Handle errors gracefully (e.g., invalid city names)
 
-Currently, two official plugins are available:
+The focus is on delivering a clean, responsive interface with basic weather functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 **Search weather by city name**
+- 🌡️ **Display current temperature**
+- 🌦️ **Show weather description and icon**
+- ⚠️ **Handle invalid city names with a clear error message**
+- 📱 **Responsive and user-friendly UI**
+
+---
+
+## 🔗 API Used
+
+**OpenWeatherMap - Current Weather Data API**  
+🔗 [https://openweathermap.org/api](https://openweathermap.org/api)
+
+Data fetched includes:
+
+- Temperature
+- Weather description
+- Weather icon
+
+To use the API, you’ll need to sign up at OpenWeatherMap and get a free API key.
+
+---
+
+## 🧩 React Components
+
+The app uses the following components:
+
+- `<SearchForm />`  
+  Handles city name input and triggers the search.
+
+- `<WeatherDetails />`  
+  Displays weather details: temperature, description, and icon.
